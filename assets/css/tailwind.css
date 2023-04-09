@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50;
+}
+
+.router-link-exact-active {
+    @apply text-violet-800;
+}
+
+@layer components {
+    .btn {
+        @apply bg-violet-500 text-white px-3 py-2 rounded-md text-sm;
+    }
+
+    .card {
+        @apply p-3 rounded-md bg-white shadow-md h-auto;
+    }
+}

@@ -1,14 +1,28 @@
 {
   "name": "nuxt-app",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "stripe:listen": "stripe listen --forward-to http://localhost:3000/api/stripe/webhook"
   },
   "devDependencies": {
-    "nuxt": "^3.3.3"
+    "@nuxtjs/tailwindcss": "^6.6.5",
+    "nuxt": "^3.3.3",
+    "nuxt-headlessui": "^1.1.1",
+    "prettier": "^2.8.7"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.12",
+    "@heroicons/vue": "^2.0.17",
+    "@vuelidate/core": "^2.0.2",
+    "@vuelidate/validators": "^2.0.2",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.6.0",
+    "openai": "^3.2.1",
+    "stripe": "^12.0.0"
   }
 }
